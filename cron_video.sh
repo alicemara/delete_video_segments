@@ -9,7 +9,7 @@ dir_clean_path=
 #create script to be run
 sudo cat > ${script_path} << EOL
 #!/bin/bash
-find ${dir_clean_path} \( -name "*.m4a" -o -name "*.m4v" -o -name "*.ts" \) -mmin +1 -exec rm {} \;
+find ${dir_clean_path} \( -name "*.m4a" -o -name "*.m4v" -o -name "*.m4s" -o -name "*.ts" \) -mmin +1 -exec rm {} \;
 EOL
 
 # make script executeable
